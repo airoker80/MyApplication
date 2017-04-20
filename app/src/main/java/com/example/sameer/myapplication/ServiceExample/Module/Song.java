@@ -1,4 +1,4 @@
-package com.example.sameer.myapplication.Module;
+package com.example.sameer.myapplication.ServiceExample.Module;
 
 /**
  * Created by Sameer on 4/20/2017.

@@ -1,4 +1,4 @@
-package com.example.sameer.myapplication.Service;
+package com.example.sameer.myapplication.ServiceExample.Service;
 
 import android.app.Notification;
 import android.app.PendingIntent;
@@ -15,7 +15,7 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.example.sameer.myapplication.MainActivity;
-import com.example.sameer.myapplication.Module.Song;
+import com.example.sameer.myapplication.ServiceExample.Module.Song;
 import com.example.sameer.myapplication.R;
 
 import java.util.ArrayList;

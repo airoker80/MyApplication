@@ -18,9 +18,9 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.MediaController;
 
-import com.example.sameer.myapplication.Adapter.SongAdapter;
-import com.example.sameer.myapplication.Module.Song;
-import com.example.sameer.myapplication.Service.MusicService;
+import com.example.sameer.myapplication.ServiceExample.Adapter.SongAdapter;
+import com.example.sameer.myapplication.ServiceExample.Module.Song;
+import com.example.sameer.myapplication.ServiceExample.Service.MusicService;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package com.example.sameer.myapplication.Adapter;
+package com.example.sameer.myapplication.ServiceExample.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.sameer.myapplication.Module.Song;
+import com.example.sameer.myapplication.ServiceExample.Module.Song;
 import com.example.sameer.myapplication.R;
 
 import java.util.ArrayList;
