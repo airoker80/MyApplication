@@ -29,6 +29,7 @@ public class ClockWidget extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
         numClocks = context.getResources().getInteger(R.integer.num_clocks);
         clockDesigns = new int[numClocks];
+        views = new RemoteViews(context.getPackageName(), R.layout.clock_widget_layout);
         for(int d=0; d<numClocks; d++){
             clockDesigns[d]=context.getResources().getIdentifier
                     ("AnalogClock"+d, "id", context.getPackageName());
@@ -39,7 +40,6 @@ public class ClockWidget extends AppWidgetProvider {
         //is it time to update
         if (AppWidgetManager.ACTION_APPWIDGET_UPDATE.equals(action)){
 
-            views = new RemoteViews(context.getPackageName(), R.layout.clock_widget_layout);
 /*
             AppWidgetManager.getInstance(context).updateAppWidget
                     (intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS), views);
