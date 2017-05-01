@@ -7,4 +7,7 @@
     Long-press the home screen and select the widget from the
     list of those installed on your device.
 </string>
+    <string name="finding_service">finding services</string>
+    <string name="btn_send">send</string>
+    <string name="txt_hint">hint</string>
 </resources>
