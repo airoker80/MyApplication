@@ -26,14 +26,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements MediaController.MediaPlayerControl {
     private ArrayList<Song> songList;
-    private ListView songView;
+//    private ListView songView;
     private MusicService musicSrv;
     private Intent playIntent;
     private boolean musicBound=false;
     private MusicController controller;
     private boolean paused=false, playbackPaused=false;
+    @BindView(R.id.song_list) ListView songView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements MediaController.M
 
                 return;
             }}
-        songView = (ListView)findViewById(R.id.song_list);
+//        songView = (ListView)findViewById(R.id.song_list);
         getSongList();
         Collections.sort(songList, new Comparator<Song>(){
             public int compare(Song a, Song b){
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements MediaController.M
         SongAdapter songAdt = new SongAdapter(this, songList);
         songView.setAdapter(songAdt);
         setController();
+        ButterKnife.bind(this);
     }
     public void getSongList() {
         //retrieve song info
